@@ -1,0 +1,77 @@
+img {
+  vertical-align: middle;
+}
+
+.list-item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .search-div__movies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movies__iron-man {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .container__form-div {
+    width: 100%;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+  .container__search-div {
+    margin-top: 40px;
+  }
+
+  .movies__iron-man {
+    width: 75%;
+  }
+
+  .movies__avengers {
+    width: 75%;
+    margin-top: 40px;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .span-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .span__button {
+    margin-top: 15px;
+  }
+
+  .search-div__ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}

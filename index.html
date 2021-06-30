@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="h1 p-3 text-center">Movies catalog</h1>
+  <div class="container d-flex">
+
+
+    <div class="container__form-div w-50">
+      <form class="mb-3" action="#" method="POST">
+        <input class="form-control form__input w-75 mb-3" type="text" name="ave" placeholder="ave" />
+
+        <input class="form-control w-75 mb-3" type="number" name="number" placeholder="5" autocomplete="off" />
+
+        <select class="form-select w-75 mb-3" aria-label="Default select example">
+          <option selected>All</option>
+          <option value="1">Iron man</option>
+          <option value="2">Thor</option>
+          <option value="3">Captain America</option>
+        </select>
+
+        <select class="form-select w-75 mb-3" aria-label="Default select example">
+          <option selected>Rating (high to low)</option>
+          <option value="1">Iron man</option>
+          <option value="2">Thor</option>
+          <option value="3">Captain America</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary d-block px-5 w-75">
+          Search
+        </button>
+      </form>
+
+      <div class="form-div__bookmarked-box">
+        <h2 class="h3 mb-3">Bookmarked movies</h2>
+
+        <div class="bookmarked-box__div w-75">
+          <span class="span d-block rounded-top border-top border-2 border-start border-end border-secondary ps-4 pb-3 pt-2 w-25>
+              <p class=" p h6">Avengers: Infinity war</p>
+            <button class="btn btn-danger  text-white py-1 px-2 fw-bold">
+              Remove
+            </button>
+          </span>
+          <span class="span d-block  border-start border-end border-top border-2 border-secondary ps-4 pb-3 pt-2 w-25>
+              <p class=" p h6">Avengers: Infinity war</p>
+            <button class="btn btn-danger text-white py-1 px-2 fw-bold">
+              Remove
+            </button>
+          </span>
+          <span class="span rounded-bottom d-block  border border-2 border-secondary ps-4 pb-3 pt-2 w-25>
+              <p class=" p h6">Avengers: Infinity war</p>
+            <button class="btn btn-danger text-white py-1 px-2 fw-bold">
+              Remove
+            </button>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+<!-- ==================================== -->
+
+    <div class="container__search-div">
+      <h3 class="h3">Search result: 39</h3>
+
+      <div class="alert alert-primary text-dark w-75  " role="alert">Use the form on the left to search for a movie</div>
+
+      <div class="search-div__movies d-flex ">
+        <div class="movies__avengers border border-1 border-secondary rounded me-3">
+          <img class="img mb-4 rounded-top" src="./images/MARVELS_AVENGERS.jpg" alt="Avengers: infinity war"
+            width="400">
+
+          <span class="span d-flex mb-3 ps-3">
+            <img src="./images/calendar.svg" alt="calendar icon" width="19" height="19">
+            <h6 class="p ms-2">2018</h6>
+          </span>
+
+          <span class="d-flex ps-3">
+            <img src="./images/star.svg" alt="star icon" width="19" height="19">
+            <h6 class="ms-2">8.7</h6>
+          </span>
+
+          <span class="span-button d-flex mt-3 pb-4 ps-3">
+            <button class="span__button btn border-2 border-primary text-primary me-3">Watch trailer</button>
+            <button class="span__button btn border-2 border-primary text-primary me-3">More info</button>
+            <button class="span__button btn border-2 border-primary text-primary me-3">Bookmark</button>
+          </span>
+        </div>
+<!-- ==================================== -->
+
+        <div class="movies__iron-man border  border-1 border-secondary rounded">
+          <img class="img mb-4 rounded-top" src="./images/iron-man-artist-image.png" alt="Avengers: infinity war"
+            width="400" height="225">
+          <span class="span d-flex mb-3 ps-3">
+            <img src="./images/calendar.svg" alt="calendar icon" width="19" height="19">
+            <h6 class="p ms-2">2012</h6>
+          </span>
+
+          <span class="d-flex ps-3">
+            <img src="./images/star.svg" alt="star icon" width="19" height="19">
+            <h6 class="ms-2">8.1</h6>
+          </span>
+
+          <span class="span-button d-flex mt-3 pb-4 ps-3">
+            <button class="span__button  btn border-2  border-primary text-primary me-3">Watch trailer</button>
+            <button class="span__button btn border-2 border-primary text-primary me-3">More info</button>
+            <button class="span__button btn border-2 border-primary text-primary me-3">Bookmark</button>
+          </span>
+        </div>
+      </div>
+<!-- ====================================== -->
+      <ul class="search-div__ul d-flex mx-auto mt-5 w-25">
+        <li class="list-item">
+          <a href="#" class="text-white rounded-start bg-primary border border-secondary border-1 py-2 px-3 text-decoration-none">1</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="text-primary border border-secondary border-1 py-2 px-3 text-decoration-none">2</a>
+        </li>
+        <li class="list-item">
+          <a  href="#" class="text-primary  border border-secondary border-1 py-2 px-3 text-decoration-none">3</a>
+        </li>
+        <li class="list-item">
+          <a  href="#" class="text-primary rounded-end  border border-secondary border-1 py-2 px-3 text-decoration-none">4</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
